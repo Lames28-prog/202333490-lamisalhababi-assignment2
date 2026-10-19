@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Personal portfolio of Lamis Alhababi, a Computer Science student at KFUPM.">
+
+    <title>Lamis Alhababi | Portfolio</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+
+            <a href="#about" class="logo">Lamis Alhababi</a>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button
+                id="theme-toggle"
+                type="button"
+                aria-label="Switch between light and dark mode">
+                🌙
+            </button>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ABOUT -->
+        <section id="about" class="about-section">
+
+            <div class="about-content">
+
+                <p class="tagline">
+                    Computer Science Student &amp; Aspiring Software Developer
+                </p>
+
+                <h1>Hello, I'm Lamis Alhababi</h1>
+
+                <p>
+                    I am a Computer Science student at King Fahd University of
+                    Petroleum &amp; Minerals (KFUPM) with an interest in software
+                    development and web technologies. I enjoy learning how
+                    technology can be used to solve real-world problems and
+                    create useful digital experiences.
+                </p>
+
+                <a href="#projects" class="primary-button">
+                    View My Projects
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="skills-section">
+
+            <div class="section-container">
+
+                <h2>Skills</h2>
+
+                <p class="section-intro">
+                    Technologies and skills I am developing through my
+                    Computer Science studies and projects.
+                </p>
+
+                <div class="skills-grid">
+
+                    <article class="skill-card">
+                        <h3>HTML</h3>
+                        <p>
+                            Creating structured and semantic web pages.
+                        </p>
+                    </article>
+
+                    <article class="skill-card">
+                        <h3>CSS</h3>
+                        <p>
+                            Styling responsive and user-friendly web interfaces.
+                        </p>
+                    </article>
+
+                    <article class="skill-card">
+                        <h3>JavaScript</h3>
+                        <p>
+                            Adding interactivity and dynamic behavior to websites.
+                        </p>
+                    </article>
+
+                    <article class="skill-card">
+                        <h3>Java</h3>
+                        <p>
+                            Applying programming and object-oriented concepts.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="projects-section">
+
+            <div class="section-container">
+
+                <h2>Projects</h2>
+
+                <p class="section-intro">
+                    A selection of projects created while developing my
+                    programming and web development skills.
+                </p>
+
+                <!-- Assignment 2: Search and filter -->
+                <div class="project-tools">
+
+                    <label for="project-search">
+                        Search projects
+                    </label>
+
+                    <input
+                        id="project-search"
+                        type="search"
+                        placeholder="Search by project name..."
+                        autocomplete="off">
+
+                    <div class="filter-buttons">
+
+                        <button
+                            class="filter-button active"
+                            type="button"
+                            data-filter="all">
+                            All
+                        </button>
+
+                        <button
+                            class="filter-button"
+                            type="button"
+                            data-filter="web">
+                            Web
+                        </button>
+
+                        <button
+                            class="filter-button"
+                            type="button"
+                            data-filter="java">
+                            Java
+                        </button>
+
+                    </div>
+
+                    <p
+                        id="project-status"
+                        role="status"
+                        aria-live="polite">
+                    </p>
+
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- PROJECT 1 -->
+                    <article
+                        class="project-card"
+                        data-category="web"
+                        data-title="personal portfolio website">
+
+                        <div
+                            class="project-image"
+                            role="img"
+                            aria-label="Portfolio website project illustration">
+
+                            <svg
+                                viewBox="0 0 500 250"
+                                xmlns="http://www.w3.org/2000/svg">
+
+                                <rect
+                                    x="55"
+                                    y="35"
+                                    width="390"
+                                    height="180"
+                                    rx="12"
+                                    fill="white"
+                                    stroke="currentColor"
+                                    stroke-width="4" />
+
+                                <rect
+                                    x="55"
+                                    y="35"
+                                    width="390"
+                                    height="35"
+                                    rx="12"
+                                    fill="currentColor" />
+
+                                <circle cx="78" cy="52" r="6" fill="white" />
+                                <circle cx="98" cy="52" r="6" fill="white" />
+                                <circle cx="118" cy="52" r="6" fill="white" />
+
+                                <text
+                                    x="250"
+                                    y="145"
+                                    text-anchor="middle"
+                                    font-size="55"
+                                    font-family="Arial"
+                                    font-weight="bold"
+                                    fill="currentColor">
+                                    &lt;/&gt;
+                                </text>
+
+                            </svg>
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>Personal Portfolio Website</h3>
+
+                            <p>
+                                A responsive personal portfolio website built
+                                using HTML, CSS, and JavaScript to present my
+                                skills, projects, and contact information.
+                            </p>
+
+                            <p class="project-technologies">
+                                HTML • CSS • JavaScript
+                            </p>
+
+                            <button
+                                class="details-button"
+                                type="button"
+                                aria-expanded="false">
+                                View details
+                            </button>
+
+                            <div class="project-details" hidden>
+                                <p>
+                                    This project helped me improve my skills in
+                                    responsive design, semantic HTML, CSS
+                                    styling, and JavaScript interactivity.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- PROJECT 2 -->
+                    <article
+                        class="project-card"
+                        data-category="java"
+                        data-title="java programming project">
+
+                        <div
+                            class="project-image"
+                            role="img"
+                            aria-label="Java programming project illustration">
+
+                            <svg
+                                viewBox="0 0 500 250"
+                                xmlns="http://www.w3.org/2000/svg">
+
+                                <rect
+                                    x="70"
+                                    y="35"
+                                    width="360"
+                                    height="180"
+                                    rx="15"
+                                    fill="white"
+                                    stroke="currentColor"
+                                    stroke-width="4" />
+
+                                <text
+                                    x="250"
+                                    y="125"
+                                    text-anchor="middle"
+                                    font-size="45"
+                                    font-family="Arial"
+                                    font-weight="bold"
+                                    fill="currentColor">
+                                    JAVA
+                                </text>
+
+                                <text
+                                    x="250"
+                                    y="170"
+                                    text-anchor="middle"
+                                    font-size="30"
+                                    font-family="Arial"
+                                    fill="currentColor">
+                                    { code }
+                                </text>
+
+                            </svg>
+
+                        </div>
+
+                        <div class="project-content">
+
+                            <h3>Java Programming Project</h3>
+
+                            <p>
+                                A programming project demonstrating
+                                fundamental Java concepts, problem-solving,
+                                and object-oriented programming techniques.
+                            </p>
+
+                            <p class="project-technologies">
+                                Java • Object-Oriented Programming
+                            </p>
+
+                            <button
+                                class="details-button"
+                                type="button"
+                                aria-expanded="false">
+                                View details
+                            </button>
+
+                            <div class="project-details" hidden>
+                                <p>
+                                    This project strengthened my understanding
+                                    of classes, objects, methods, problem-solving,
+                                    and reusable programming code.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact-section">
+
+            <div class="section-container">
+
+                <h2>Contact Me</h2>
+
+                <p class="section-intro">
+                    Have a question or want to get in touch? Send me a message
+                    using the form below.
+                </p>
+
+                <form id="contact-form">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                            required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            maxlength="500"
+                            placeholder="Write your message"
+                            required></textarea>
+
+                        <!-- Assignment 2: Character feedback -->
+                        <small id="message-counter">
+                            0 / 500 characters
+                        </small>
+
+                        <p
+                            id="message-feedback"
+                            role="status"
+                            aria-live="polite">
+                        </p>
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="primary-button">
+                        Send Message
+                    </button>
+
+                    <!-- Assignment 2: Success and error feedback -->
+                    <p
+                        id="form-message"
+                        role="status"
+                        aria-live="polite">
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy;
+            <span id="current-year"></span>
+            Lamis Alhababi.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
