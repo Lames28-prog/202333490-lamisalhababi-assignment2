@@ -46,3 +46,18 @@ The website presents my background, skills, projects, and contact information. A
 │   └── technical-documentation.md
 ├── README.md
 └── .gitignore
+
+## How to Run Locally
+
+1. Download or clone this repository to your computer.
+2. Open the project folder in Visual Studio Code.
+3. Open `index.html` directly in a browser.
+
+For the recommended method:
+
+- Install the **Live Server** extension in Visual Studio Code.
+- Right-click `index.html`.
+- Select **Open with Live Server**.
+- The portfolio will open in your browser.
+
+No additional packages or installation commands are required because this project uses plain HTML, CSS, and JavaScript.

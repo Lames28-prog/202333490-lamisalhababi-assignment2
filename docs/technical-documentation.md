@@ -180,3 +180,41 @@ If no project matches the search, the website displays:
 
 ```text
 No projects found. Try another search.
+
+### Expandable Project Details
+
+Each project card contains a **View details** button. When the user clicks the button, JavaScript displays or hides additional information about the project.
+
+The button text changes between **View details** and **Hide details**. The `aria-expanded` attribute is also updated to improve accessibility.
+
+### Theme Persistence
+
+The theme toggle allows users to switch between light mode and dark mode.
+
+JavaScript adds or removes the `dark-mode` class from the `<body>` element. The selected theme is saved in the browser using `localStorage`.
+
+When the page is opened again, JavaScript reads the saved theme and automatically restores it.
+
+### Contact-Form Validation
+
+The contact form validates the user's input before showing a success message.
+
+The validation checks that:
+
+- The name is not empty.
+- The email address has a valid format.
+- The message contains at least 10 characters.
+- The message does not exceed 500 characters.
+
+If the input is invalid, an error message is displayed and the user is asked to correct the field.
+
+If all fields are valid, a success message confirms that the message was sent successfully.
+
+### Character Counter
+
+The message textarea has a maximum length of 500 characters.
+
+The character counter updates while the user types. For example:
+
+```text
+25 / 500 characters
